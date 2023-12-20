@@ -193,5 +193,38 @@ Corrupted Image의 예시는 다음과 같다.
   kafkacat -b localhost:9092 -t postgres-source-cargo
   ```
   ![root@CHPCJ4_ _mnt_c_Users_USERSPC_capstone-mlops_kafka 2023-12-18 15-24-22](https://github.com/duneag2/capstone-mlops/assets/137387521/d8de0041-b5d1-4c3b-b977-3fa7596f8704)
+  실시간 업데이트가 반영되고 있는 것을 확인할 수 있다.
 
 
+  ```
+  docker compose -p part7-target -f target-docker-compose.yaml up -d
+  ```
+  ![image](https://github.com/duneag2/capstone-mlops/assets/137387521/ab2eceb3-402c-4f7a-823c-17b41a586d9b)
+  ![image](https://github.com/duneag2/capstone-mlops/assets/137387521/f84fc07e-d4e3-473f-a506-0d5e2ab1b522)
+  table-creator는 동작 후 exited 되는 것이 정상
+
+
+  ```
+  curl -X POST http://localhost:8083/connectors -H "Content-Type: application/json" -d @sink_connector.json
+  ```
+  ![image](https://github.com/duneag2/capstone-mlops/assets/137387521/793a09b6-cd1f-4f41-9fd0-473bd4812f97)
+  ```
+  curl -X GET http://localhost:8083/connectors
+  ```
+  ![image](https://github.com/duneag2/capstone-mlops/assets/137387521/204c92c9-c200-4fdb-b9e8-d229fdac6e45)
+  ```
+  curl -X GET http://localhost:8083/connectors/postgres-sink-connector
+  ```
+  ![image](https://github.com/duneag2/capstone-mlops/assets/137387521/c9d9d7a9-a2a3-40f6-807e-8f5a3b34c017)
+  ```
+  psql -h localhost -p 5433 -U targetuser -d targetdatabase
+  ```
+  - password: `targetpassword`
+  ```
+  SELECT * FROM cargo LIMIT 100;
+  ```
+
+
+  
+
+  
