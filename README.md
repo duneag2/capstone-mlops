@@ -350,7 +350,7 @@ Corrupted Image의 예시는 다음과 같다.
 
 아래의 내용은 Model Registery까지 진행 후 실행하면 된다.
 
-* 실행위치: `./dashboard_stream`
+* 실행위치: `./model_registry`
   ```
   python3 save_model_to_registry_tuesday.py --model-name "sk_model"
   ```
