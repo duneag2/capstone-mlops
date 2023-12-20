@@ -339,6 +339,8 @@ Corrupted Image의 예시는 다음과 같다.
   우측상단 Last 6 hours라고 써있는 부분 클릭해서 From 부분을 now-30s로 수정, 우측상단 새로고침 버튼 눌러서 1s로 설정
   
   ![dashboard - Clipchamp로 제작](https://github.com/duneag2/capstone-mlops/assets/137387521/6502f6d4-b815-4c13-bb4c-abef076dd52d)
+
+
   잘 실행되는 것을 확인할 수 있다.
 
 
@@ -366,7 +368,7 @@ Corrupted Image의 예시는 다음과 같다.
   ```
 
 각각 실행할 수 있으며, 실행 결과는 다음과 같았다.
-<img width="577" alt="data" src="https://github.com/duneag2/capstone-mlops/assets/137387521/5389eb29-3295-4478-ac85-d23e8f90eb31">
+![image](https://github.com/duneag2/capstone-mlops/assets/137387521/5389eb29-3295-4478-ac85-d23e8f90eb31)
 
 
 
