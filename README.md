@@ -54,4 +54,25 @@ Corrupted Image의 예시는 다음과 같다.
   ```
   docker compose up -d --build --force-recreate
   ```
-  
+  ![data_generate 1](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F14519646-54d7-4a91-94c1-750beec3e8f9%2F310cbc04-24d5-4252-ab69-2bccab5ce52a%2FUntitled.png?table=block&id=c2d1c13f-5288-4e94-b274-bd89e4434816&spaceId=14519646-54d7-4a91-94c1-750beec3e8f9&width=2000&userId=54861078-d95f-4d03-8c5e-bd24b43177a5&cache=v2)
+  ```
+  docker ps
+  ```
+  ![data_generate 2](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F14519646-54d7-4a91-94c1-750beec3e8f9%2F182f3996-5914-48f0-afe1-f792211a6381%2FUntitled.png?table=block&id=205f7aea-f48e-4161-a9de-53502d1738b3&spaceId=14519646-54d7-4a91-94c1-750beec3e8f9&width=2000&userId=54861078-d95f-4d03-8c5e-bd24b43177a5&cache=v2)
+  ```
+  docker network ls
+  ```
+  ![data_generate 3](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F14519646-54d7-4a91-94c1-750beec3e8f9%2Ff37631c4-a691-461c-a8a9-4a2658a2fa6c%2FUntitled.png?table=block&id=f3a50026-d3b0-44cb-8da9-166a83f1f533&spaceId=14519646-54d7-4a91-94c1-750beec3e8f9&width=2000&userId=54861078-d95f-4d03-8c5e-bd24b43177a5&cache=v2)
+  ```
+  psql -h localhost -p 5432 -U myuser -d mydatabase
+  ```
+  - password: `mypassword`
+  ![data_generate 4](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F14519646-54d7-4a91-94c1-750beec3e8f9%2Ffc4844d8-ee00-482a-a277-19378993a49e%2FUntitled.png?table=block&id=14004eb0-7ee3-4ea0-867f-d7071b7d0dbd&spaceId=14519646-54d7-4a91-94c1-750beec3e8f9&width=2000&userId=54861078-d95f-4d03-8c5e-bd24b43177a5&cache=v2)
+  ```
+  mydatabase=# select * from cargo order by id desc;
+  ```
+  ![data_generate 5](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F14519646-54d7-4a91-94c1-750beec3e8f9%2F0081b91a-55b8-49ac-9544-09be8c0ddb9a%2FUntitled.png?table=block&id=46984ef1-9173-478d-8995-70bbb8f58089&spaceId=14519646-54d7-4a91-94c1-750beec3e8f9&width=2000&userId=54861078-d95f-4d03-8c5e-bd24b43177a5&cache=v2)
+
+
+## Model Registry
+
