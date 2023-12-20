@@ -46,3 +46,12 @@ Corrupted Image의 예시는 다음과 같다.
   python image_list.py
   ```
   - 이미지 파일 경로를 수정하기 위해서는 main 함수를 수정하면 된다.
+
+
+## Data Generate
+
+* 실행위치: `./data_generate`
+  ```
+  docker compose up -d --build --force-recreate
+  ```
+  
