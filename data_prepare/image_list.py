@@ -30,8 +30,8 @@ def make_list(input_folder, output_file):
     df.to_json(output_file, orient='records', lines=True)
 
 def main():
-    make_list(r'..\part6\monday', r'..\part1\monday')
-    make_list(r'..\part6\tuesday', r'..\part1\tuesday')
+    make_list(r'..\api_serving\monday', r'..\data_generate\monday')
+    make_list(r'..\api_serving\tuesday', r'..\data_generate\tuesday')
 
 if __name__ == "__main__":
     main()
