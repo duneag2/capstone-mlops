@@ -75,4 +75,42 @@ Corrupted Image의 예시는 다음과 같다.
 
 
 ## Model Registry
+* 실행위치: `./model_registery`
+  ```
+  docker compose up -d --build --force-recreate
+  ```
+  ![image](https://github.com/duneag2/capstone-mlops/assets/137387521/f51d472d-3748-406c-b65c-664c7a8cf310)
+
+
+  [localhost:5001](http://localhost:5001/) 접속 (딱히 아무것도 안 뜬다면 정상)
+  ![image](https://github.com/duneag2/capstone-mlops/assets/137387521/ac82e811-0ed8-4b86-b287-537e045b9e0f)
+
+
+  [localhost:9001](http://localhost:9001/) 접속 (username: `minio`, password: `miniostorage`)
+  ![image](https://github.com/duneag2/capstone-mlops/assets/137387521/e4d6ad20-c912-4b6c-a9d9-b6b70dc8e0e7)
+  ![image](https://github.com/duneag2/capstone-mlops/assets/137387521/b6bdf68a-5243-48de-a331-336661b4e4c1)
+  처음 들어가면 bucket이 없을 수 있다. -> Create a bucket -> 이름 `mlflow`로 설정 후 생성 (아래 토글들은 클릭하지 않으시면 됨)
+  ![image](https://github.com/duneag2/capstone-mlops/assets/137387521/43c2f4c9-9cce-4087-891a-bcbb483a1106)
+  ![image](https://github.com/duneag2/capstone-mlops/assets/137387521/7cac725f-50f1-49cb-9946-1ef7ce19b486)
+
+
+  ```
+  python3 save_model_to_registry.py --model-name "sk_model"
+  ```
+  ![image](https://github.com/duneag2/capstone-mlops/assets/137387521/f7902f4d-6c9b-4eee-bb8e-b1916641ffba)
+  ![image](https://github.com/duneag2/capstone-mlops/assets/137387521/97ccc54d-e30a-4b25-bd7a-56646c177214)
+
+
+  [localhost:5001](http://localhost:5001/) 접속 -> new_exp id 복사 `--run-id`로 입력 후 실행
+  ![image](https://github.com/duneag2/capstone-mlops/assets/137387521/4907c4f4-c974-49cc-9ad7-f88bb3196510)
+  ![image](https://github.com/duneag2/capstone-mlops/assets/137387521/1f30c100-dd29-44f4-b280-a63c6e942920)
+  ```
+  python3 load_model_from_registry.py --model-name "sk_model" --run-id 70b965be026d4e5fb33cf6eccaa43b90
+  ```
+  ![image](https://github.com/duneag2/capstone-mlops/assets/137387521/d99fd613-7389-4cd6-a0d0-052ea8ffefd1)
+  ![image](https://github.com/duneag2/capstone-mlops/assets/137387521/ea0733c8-8187-40be-8173-48122e83c4bf)
+  Metrics와 동일하게 나오는 것을 확인 할 수 있음
+
+여기까지의 내용은 monday dataset 만으로 모델을 훈련시킨 과정이다. 여기서 훈련시킨 `sk-model`을 이용해 이후의 과정을 진행하였다. 별도로 tuesday dataset을 이용한 실험도 진행하였으나 이 내용은 맨 아래 **Training a model using both monday and tuesday dataset** 챕터에서 상술하였다.
+
 
