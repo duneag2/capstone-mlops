@@ -338,8 +338,35 @@ Corrupted Image의 예시는 다음과 같다.
   ![image](https://github.com/duneag2/capstone-mlops/assets/137387521/c13fc87f-dc26-4c38-ad85-76b534bdca42)
   우측상단 Last 6 hours라고 써있는 부분 클릭해서 From 부분을 now-30s로 수정, 우측상단 새로고침 버튼 눌러서 1s로 설정
   
+  ![dashboard - Clipchamp로 제작](https://github.com/duneag2/capstone-mlops/assets/137387521/6502f6d4-b815-4c13-bb4c-abef076dd52d)
+  잘 실행되는 것을 확인할 수 있다.
 
 
+## Training a model using both monday and tuesday dataset
+
+본 프로젝트에서는 ~~~~~~~~~~~~~~이유를 위해 어쩌고저쩌고를 했다.
+
+아래의 내용은 Model Registery까지 진행 후 실행하면 된다.
+
+* 실행위치: `./dashboard_stream`
+  ```
+  python3 save_model_to_registry_tuesday.py --model-name "sk_model"
+  ```
+  ```
+  python3 save_model_to_registry_random.py --model-name "sk_model"
+  ```
+  ```
+  python3 save_model_to_registry_cp_l1norm.py --model-name "sk_model"
+  ```
+  ```
+  python3 save_model_to_registry_cp_l2norm.py --model-name "sk_model"
+  ```
+  ```
+  python3 save_model_to_registry_cp_cosine.py --model-name "sk_model"
+  ```
+
+각각 실행할 수 있으며, 실행 결과는 다음과 같았다.
+<img width="577" alt="data" src="https://github.com/duneag2/capstone-mlops/assets/137387521/5389eb29-3295-4478-ac85-d23e8f90eb31">
 
 
 
