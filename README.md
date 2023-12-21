@@ -372,9 +372,7 @@ Corrupted Image 데이터셋인 `tuesday`는 `./data_prepare`에 있는 `image_c
 각각 실행할 수 있으며, 실행 결과는 다음과 같았다.
 ![image](https://github.com/duneag2/capstone-mlops/assets/137387521/5389eb29-3295-4478-ac85-d23e8f90eb31)
 
-Monday dataset은 noise가 없는 이상적인 상황을 가정했으므로, 평가 정확도 0.804
-
-
+Monday dataset은 noise가 없는 이상적인 상황을 가정했으므로, 평가 정확도 0.804±0.005를 보인다. 하지만 Tuesday dataset은 날씨 이상 및 카메라 오작동으로 인해 데이터가 훼손되는 상황을 가정하여 평가 정확도 0.656±0.010를 기록하였다.
 
 
 
