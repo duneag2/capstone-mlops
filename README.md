@@ -1,5 +1,6 @@
 # Capstone MLOps 기반 머신러닝 워크플로우 자동화 프로젝트
-본 프로젝트는 어쩌구저쩌구 어라왈와ㅣ 호ㅑㅗㄷ ㅓㅜㅏㅇ낭랑 ㅏㅣㅗ댜 ㅗ두 대충 abstract에 해당하는 내용 어쩌고 저쩌고 롸롸롸롸뢀 
+
+MLOps(Machine Learning Operations)란 데이터 수집부터 인공지능 모델을 학습하고 배포하는 단계까지 머신러닝 워크플로우 전 과정에 대한 자동화된 파이프라인을 제공하는 시스템입니다.
 
 
 [MLOPs for MLE](https://mlops-for-mle.github.io/tutorial/docs/intro)을 참고하여, 어쩌고 저쩌고..
