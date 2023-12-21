@@ -1,9 +1,8 @@
 # Capstone MLOps 기반 머신러닝 워크플로우 자동화 프로젝트
 
-MLOps(Machine Learning Operations)란 데이터 수집부터 인공지능 모델을 학습하고 배포하는 단계까지 머신러닝 워크플로우 전 과정에 대한 자동화된 파이프라인을 제공하는 시스템입니다.
+MLOps(Machine Learning Operations)란 데이터 수집부터 인공지능 모델을 학습하고 배포하는 단계까지 머신러닝 워크플로우 전 과정에 대한 자동화된 파이프라인을 제공하는 시스템입니다. 인공지능 모델 개발은 특히 다량의 데이터를 오랜 시간 학습해야 하기에 데이터와 모델 버전 관리가 중요합니다. 또 이렇게 학습된 모델의 배포까지 자동화하기 위해서는 효율성과 일관성을 갖춘 MLOps가 필요합니다. 본 프로젝트에서는 특히 MLOps 중 CVOps(Computer Vision Operations)를 다루었습니다.
 
-
-[MLOPs for MLE](https://mlops-for-mle.github.io/tutorial/docs/intro)을 참고하여, 어쩌고 저쩌고..
+[MLOPs for MLE](https://mlops-for-mle.github.io/tutorial/docs/intro)을 참고하여, 프로젝트를 진행하였습니다.
 
 
 프로젝트를 수행하는 방법은 다음과 같다.
