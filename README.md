@@ -30,7 +30,7 @@ Corrupted Image 데이터셋인 `tuesday`는 `./data_prepare`에 있는 `image_c
   - 본 프로젝트에서는 mixed 옵션을 사용하였다.
 
 
-Corrupted Image의 예시는 다음과 같다.
+Corrupted Image의 예시는 다음과 같다. Corruption의 종류에는 random box, mosaic, random line 이렇게 3가지가 존재하며, 랜덤으로 이미지에 적용하였다.
 <p align="center">
   <img src="https://github.com/duneag2/capstone-mlops/assets/137387521/139c9714-47b2-4376-b743-ab26eae04046" alt="tree64" width="250"/>
   <img src="https://github.com/duneag2/capstone-mlops/assets/137387521/a8fd5493-a53a-414f-a7f8-cf8385898688" alt="tree50" width="250"/>
@@ -346,7 +346,10 @@ Corrupted Image의 예시는 다음과 같다.
 
 ## Training a model using both monday and tuesday dataset
 
-본 프로젝트에서는 ~~~~~~~~~~~~~~이유를 위해 어쩌고저쩌고를 했다.
+본 프로젝트에서 가정한 실험 시나리오는 다음과 같다.
+월요일 : 정상적인 cargo image dataset로 모델을 학습하고 평가한다.
+화요일 : 날씨나 카메라 이상으로 인해, noise가 있는 cargo image dataset으로 모델을 학습하고 평가한다.
+단, 시간이 지나자 점차 날씨가 풀리고 카메라도 복구됨을 가정하여 월요일의 정상적인 dataset도 평가한다.
 
 아래의 내용은 Model Registery까지 진행 후 실행하면 된다.
 
@@ -370,6 +373,7 @@ Corrupted Image의 예시는 다음과 같다.
 각각 실행할 수 있으며, 실행 결과는 다음과 같았다.
 ![image](https://github.com/duneag2/capstone-mlops/assets/137387521/5389eb29-3295-4478-ac85-d23e8f90eb31)
 
+Monday dataset은 noise가 없는 이상적인 상황을 가정했으므로, 평가 정확도 0.804
 
 
 
