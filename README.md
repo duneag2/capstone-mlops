@@ -30,7 +30,6 @@ Corrupted Image 데이터셋인 `tuesday`는 `./data_prepare`에 있는 `image_c
   - 본 프로젝트에서는 mixed 옵션을 사용하였다.
 
 
-Corrupted Image의 예시는 다음과 같다. Corruption의 종류에는 random box, mosaic, random line 이렇게 3가지가 존재하며, 랜덤으로 이미지에 적용하였다.
 <p align="center">
   <img src="https://github.com/duneag2/capstone-mlops/assets/137387521/139c9714-47b2-4376-b743-ab26eae04046" alt="tree64" width="250"/>
   <img src="https://github.com/duneag2/capstone-mlops/assets/137387521/a8fd5493-a53a-414f-a7f8-cf8385898688" alt="tree50" width="250"/>
